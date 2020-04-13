@@ -1,4 +1,5 @@
 # encoding=utf-8
+import os
 from io import BytesIO
 
 import tkinter as tk
@@ -27,10 +28,11 @@ app = tk.Tk()
 
 """display image with label"""
 
-sample_image_url = 'https://i.imgur.com/lIjvcCJ.jpg'
-res = requests.get(sample_image_url)
 image_filename = 'isekai_mahou.jpg'
-open(image_filename, mode='wb').write(res.content)
+if not os.path.exists(image_filename):
+    sample_image_url = 'https://i.imgur.com/lIjvcCJ.jpg'
+    res = requests.get(sample_image_url)
+    open(image_filename, mode='wb').write(res.content)
 
 """tk.PhotoImage only support GIF, PPM/PGM"""
 image = ImageTk.PhotoImage(Image.open(image_filename))
