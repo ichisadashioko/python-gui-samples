@@ -12,7 +12,7 @@ label_top = tk.Label(
 label_top.grid(column=0, row=0)
 
 combobox = ttk.Combobox(
-    app, 
+    app,
     values=[
         'Sushi',
         'Pizza',

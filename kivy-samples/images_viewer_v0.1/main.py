@@ -25,15 +25,15 @@ class KivyApp(App):
         layout.anchor_x = 'center'
         layout.anchor_y = 'center'
         layout.add_widget(btn2)
-        
+
         layout.anchor_x = 'left'
         layout.anchor_y = 'center'
         layout.add_widget(btn3)
-        
+
         layout.anchor_x = 'right'
         layout.anchor_y = 'bottom'
         layout.add_widget(btn4)
-        
+
         layout.anchor_x = 'center'
         layout.anchor_y = 'bottom'
         layout.add_widget(btn5)

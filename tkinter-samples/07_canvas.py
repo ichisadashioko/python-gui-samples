@@ -30,7 +30,7 @@ if __name__ == "__main__":
             img = Image.open(io.BytesIO(ps.encode('utf-8')))
             np_img = np.array(img)
             print(np_img.shape)
-            
+
             # script_filename = 'temp_canvas.eps'
             # # save canvs to .eps (postscript) file
             # canvas.postscript(

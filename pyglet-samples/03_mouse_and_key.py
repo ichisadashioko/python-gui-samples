@@ -21,7 +21,7 @@ if __name__ == "__main__":
         elif symbol == key.P:
             window_img = pyglet.image.get_buffer_manager().get_color_buffer()
             img_data = window_img.get_image_data() # pyglet.image.ImageData
-            
+
             img_bytes = img_data.data
 
             np_img = np.fromstring(img_bytes, dtype=np.uint8)
